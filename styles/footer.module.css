@@ -1,0 +1,25 @@
+.container{
+  background-color:#202223 ;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+.top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container a,.container p{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  margin: 5px 0;
+}
+.span{
+  margin-top: 20px;
+  color: rgb(191, 191, 191);
+}
+.icon{
+  font-size: 14px;
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.section{
+  margin: 0;
+  padding: 20px 0 0;
+  background: var(--background);
+}
+.litsection{
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+}
+.litheading{
+  font-family: 'Playfair Display', serif;
+  margin: 50px 5% 20px;
+  font-size: 40px;
+  color: black;
+  border-bottom: 1px solid rgb(135, 135, 135);
+}
+.artheading{
+  font-family: 'Playfair Display', serif;
+  margin: 10px 5% 20px;
+  font-size: 45px;
+  color: black;
+  border-bottom: 1px solid rgb(135, 135, 135);
+}
+.newsheading{
+  font-family: 'Playfair Display', serif;
+  margin: 50px 5% 20px;
+  font-size: 40px;
+  color: black;
+  border-bottom: 1px solid rgb(135, 135, 135);
+}
+.videosheading{
+  font-family: 'Playfair Display', serif;
+  margin: 30px 5% 20px;
+  font-size: 40px;
+  color: black;
+  border-bottom: 1px solid rgb(135, 135, 135);
+}
+@media screen and (max-width: 720px){
+  .artheading{
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+  .litheading{
+    font-size: 35px;
+    margin-top: 0;
+  }
+  .videosheading{
+    font-size: 35px;
+    margin-top: 0;
+  }
+}

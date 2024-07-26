@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.container{
+  text-align: left;
+  margin-top: 50px;
+  padding-left: 3vw;
+  width: 92vw;
+  height: 300px;
+}
+.imagecontainer{
+  width: 27vw;
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+  transition: 0.5s;
+}
+.imagecontainer:hover .infocontainer{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 0px;
+  top: 50px;
+}
+.imagecontainer:hover .cardinfo p{
+  opacity: 1;
+}
+.imagecontainer:hover .image{
+  transform: scale(1.05);
+}
+.image{
+  width: 27vw;
+  height: 280px;
+  object-fit: cover;
+  transition: 1s;
+}
+.cardinfo{
+  height: 60px;
+  width: 25vw;
+  transition: 0.5s;
+  color: white;
+  padding-left: 20px;
+  font-weight: 200;
+}
+.cardinfo p{
+  font-size: 14px;
+  opacity: 0;
+}
+.cardheading1{
+  margin: 0;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 200;
+}
+.cardheading{
+  padding-top: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 200;
+}
+.infocontainer{
+  position: absolute;
+  top: 200px;
+  font-family: 'Quicksand', sans-serif;
+  width: 28vw;
+  height: 380px;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.span{
+  display: block;
+  color:var(--seagreen);
+}
+@media screen and (max-width: 1380px){
+  .imagecontainer,.image,.cardinfo,.infocontainer{
+    width: 40vw;
+  }
+  .cardinfo{
+    width: 93%;
+  }
+  .imagecontainer,.image{
+    height: 300px;
+  }
+}
+@media screen and (max-width: 720px){
+  .container{
+    padding-left: 8vw;
+    width: 80vw;
+    margin-top: 20px;
+  }
+  .imagecontainer,.image,.cardinfo,.infocontainer{
+    width: 100%;
+  }
+  .container{
+    height: 250px;
+  }
+  .imagecontainer{
+    height: 220px;
+    padding-left: 96%;
+  }
+  .infocontainer{
+    top: 140px;
+  }
+}

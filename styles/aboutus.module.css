@@ -1,0 +1,68 @@
+.background{
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.heading{
+  margin: 30px 10vw;
+  font-size: 50px;
+  border-bottom: 1px solid rgb(92, 92, 92);
+  font-weight: 200;
+}
+.subheading{
+  margin: 50px 0;
+  font-size: 50px;
+  border-bottom: 1px solid rgb(92, 92, 92);
+  font-weight: 200;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  gap: 8vw;
+  margin-bottom: 50px;
+}
+.leftcontainer{
+  width: 50vw;
+}
+.info{
+  margin: 0;
+}
+.imgcontainer{
+  width: 15vw;
+  height: 200px;
+  background-color: grey;
+}
+.img{
+  object-fit: cover;
+  height: 200px;
+  width: 15vw;
+}
+.boxflex{
+  width: 50vw;
+  display: flex;
+  gap: 3vw;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.boxflex h2{
+margin-top: 0;
+}
+.boxflex p{
+  width: 30vw;
+}
+.Adcontainer{
+  margin-bottom: 40px;
+  height: 75vh;
+  width: 20vw;
+  position: sticky;
+  top: 120px;
+}
+.adimg{
+  height: 550px;
+  width: 20vw;
+  position: sticky;
+  top: 120px;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid grey;
+  object-fit: cover;
+}

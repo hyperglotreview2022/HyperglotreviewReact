@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.container{
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 3vw;
+  width: 92vw;
+}
+.slider{
+height: auto;
+}
+.imagecontainer{
+  width: 16vw;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 360px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px rgb(221, 221, 221);
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+.imagecontainer:hover{
+  box-shadow: 12px 12px 7px rgb(172, 172, 172);
+}
+.imagecontainer:hover .image{
+  transform: scale(1.05);
+}
+.imagecontainer:hover .infocontainer{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 0px;
+  top: 150px;
+}
+.image{
+  width: 100%;
+  height: 360px;
+  object-fit:fill;
+  transition: 1s;
+}
+.cardinfo{
+  padding-left: 10px;
+  height: 60px;
+  width: 92%;
+  transition: 0.5s;
+  color: white;
+  font-weight: 200;
+}
+.cardheading{
+  padding-top: 10px;
+  margin: 5px 0px;
+  font-size: 18px;
+  font-weight: 200;
+}
+.infocontainer{
+  position: absolute;
+  top: 300px;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  height: 380px;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.span{
+  display: block;
+  color:var(--seagreen);
+}
+.para{
+  font-size: 14px;
+  display: none;
+}
+.imagecontainer:hover .para{
+  display: block;
+} 
+@media screen and (max-width: 1380px){
+  .image{
+    width: 100%;
+  }
+  .cardinfo{
+    width: 90%;
+  }
+  .imagecontainer{
+    width: 20vw;
+    height: 380px;
+  }
+  .infocontainer{
+    top: 320px;
+  }
+}
+@media screen and (max-width: 720px){
+  .container{
+    padding-left: 8vw;
+    width: 80vw;
+    margin-top: 0;
+  }
+  .image,.cardinfo{
+    width: 100%;
+  }
+  .infocontainer{
+    text-align: left;
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    top: 240px;
+  }
+  .imagecontainer{
+    width: 80%;
+  }
+  .container{
+    height: 350px;
+  }
+  .imagecontainer{
+    height: 320px;
+  }
+  .slider{
+    padding-left: 10%;
+    }
+}

@@ -1,0 +1,105 @@
+.container{
+  margin: 50px 5% 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 2vw;
+}
+.image{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.title{
+  font-weight: 300;
+  margin: 5px 0;
+}
+.desc{
+  font-size: 14px;
+  color: rgb(69, 69, 69);
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+.background{
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.heading{
+  margin: 30px 10vw;
+  font-size: 30px;
+  border-bottom: 1px solid rgb(92, 92, 92);
+  font-weight: 200;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  margin-bottom: 50px;
+}
+.Adcontainer{
+  margin-bottom: 40px;
+  height: 75vh;
+  width: 20vw;
+  position: sticky;
+  top: 120px;
+}
+.adimg{
+  height: 550px;
+  width: 20vw;
+  position: sticky;
+  top: 120px;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid grey;
+  object-fit: cover;
+}
+.info{
+  width: 50vw;
+}
+.videocontainer{
+  padding: 15px 1vw;
+  border: 1px solid rgb(152, 152, 152);
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px rgb(221, 221, 221);
+}
+.videocontainer:hover{
+  box-shadow: 12px 12px 7px rgb(172, 172, 172);
+}
+.imgcont{
+  position: relative;
+}
+.logocont{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagelogo{
+  width: 7vw;
+  height: auto;
+}
+.videocontainer:hover .logocont{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 720px){
+  .container{
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    padding: 0 5%;
+  }
+  .videocontainer{
+    padding: 10px 3vw;
+    border-radius: 15px;
+  }
+  .image{
+    border-radius: 10px;
+  }
+  .imagelogo{
+    width: 35%;
+  }
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+:root {
+  --seagreen: rgb(0, 255, 255);
+  --white: #ffffff;
+  --background:white;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.slick-prev, .slick-next{
+  height: 100px;
+}

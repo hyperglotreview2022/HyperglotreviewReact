@@ -1,0 +1,13 @@
+.background{
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.heading{
+  margin: 30px 10vw;
+  font-size: 50px;
+  border-bottom: 1px solid rgb(92, 92, 92);
+  font-weight: 200;
+}
+.bigcontainer{
+  margin-top: 70px;
+}
