@@ -57,7 +57,7 @@ const navbar = () => {
 
       <div>
 
-       <Image className={styles.logo} src="/../public/websitelogos/newestlogo.png" width={400} height={400} alt="logo"/>
+       <Image className={styles.logo} src="/websitelogos/newestlogo.png" width={400} height={400} alt="logo"/>
      
      </div>
 

@@ -129,3 +129,10 @@
   color: black;
   text-decoration: none;
 }
+.imagesartistcontainer{
+  float: left;
+  margin: 0 3vw 0 0;
+}
+.artistprofileimages{
+  width: 20vw;
+}

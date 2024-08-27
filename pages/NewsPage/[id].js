@@ -81,16 +81,16 @@ const singlepage = ({ params }) => {
               <Image className={styles.sublistimg} src={data.url[0]} width={400} height={400} alt="image" />
             </div>
             <div className={styles.listinfo}>
-              <Link className={styles.link} href={`/SinglePage/${data.id}`}><h3>{data.heading}</h3></Link>
+              <Link className={styles.link} href={data.id>83 ? `/ArtistPage/${data.id}` : `/SinglePage/${data.id}`}><h3>{data.heading}</h3></Link>
               <p>{data.info[0].slice(0,150)}...</p>
-              <Link className={styles.link} href={`/SinglePage/${data.id}`}><button className={styles.button}>Read More</button></Link>
+              <Link className={styles.link} href={data.id>83 ? `/ArtistPage/${data.id}` : `/SinglePage/${data.id}`}><button className={styles.button}>Read More</button></Link>
             </div>
               </div>
             })}</div> : <div>{items}</div>}
           </div>
 
             <div className={styles.Adcontainer}>
-                <Image className={styles.adimg} src={"/../public/ads/TAGad/img.jpg"} width={300} height={700}  alt="sidead" />
+                <Image className={styles.adimg} src={"/ads/TAGad/img.jpg"} width={300} height={700}  alt="sidead" />
             </div>
           </div>
     <Footer />  

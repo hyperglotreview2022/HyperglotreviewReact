@@ -24,7 +24,7 @@ export default function index() {
           <Image className={styles.topbannerimg} src={itemdata[itemdata.length-1].url[0]} width={700} height={400} alt="image" />
         </div>
         <div className={styles.topinfo} key={itemdata[itemdata.length-1].id}>
-          <Link className={styles.link} href={`/SinglePage/${itemdata[itemdata.length-1].id}`}><h3>{itemdata[itemdata.length-1].heading}</h3></Link>
+          <Link className={styles.link} href={`/NewsPage/${itemdata[itemdata.length-1].id}`}><h3>{itemdata[itemdata.length-1].heading}</h3></Link>
           <p>{itemdata[itemdata.length-1].info[0].slice(0,300)}...</p>
         </div>
       </div>
@@ -35,9 +35,9 @@ export default function index() {
               <Image className={styles.sublistimg} src={data.url[0]} width={400} height={400} alt="image" />
             </div>
             <div className={styles.listinfo}>
-              <Link className={styles.link} href={`/SinglePage/${data.id}`}><h3>{data.heading}</h3></Link>
+              <Link className={styles.link} href={`/NewsPage/${data.id}`}><h3>{data.heading}</h3></Link>
               <p>{data.info[0].slice(0,150)}...</p>
-              <Link className={styles.link} href={`/SinglePage/${data.id}`}><button className={styles.button}>Read More</button></Link>
+              <Link className={styles.link} href={`/NewsPage/${data.id}`}><button className={styles.button}>Read More</button></Link>
             </div>
           </div>
         )
@@ -45,7 +45,7 @@ export default function index() {
     </div>
     <div>
       <div className={styles.Adcontainer}>
-        <Image className={styles.adimg} src={"/../public/ads/TAGad/img.jpg"} width={300} height={700}  alt="sidead" />
+        <Image className={styles.adimg} src={"/ads/TAGad/img.jpg"} width={300} height={700}  alt="sidead" />
       </div>
       </div>
     </div>

@@ -54,7 +54,7 @@ const artslider = () => {
       <Slider {...settings}>
         {data.reverse().slice(0,7).map((data) => (
           <div key={data.id}>
-            <Link href={`/SinglePage/${data.id}`}>
+            <Link href={data.id>83 ? `/ArtistPage/${data.id}` : `/SinglePage/${data.id}`}>
               <div className={Styles.imagecontainer}>
                 <div className={Styles.images}>
                   <Image

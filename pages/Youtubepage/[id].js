@@ -53,7 +53,7 @@ const youtube = ({ data }) => {
             </div>
           </div>
             <div className={styles.Adcontainer}>
-                <Image className={styles.adimg} src={"/../public/ads/TAGad/img.jpg"} width={300} height={700}  alt="sidead" />
+                <Image className={styles.adimg} src={"/ads/TAGad/img.jpg"} width={300} height={700}  alt="sidead" />
             </div>
           </div>
     <Footer />
